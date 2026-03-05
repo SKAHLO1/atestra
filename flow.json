@@ -1,0 +1,38 @@
+{
+	"contracts": {
+		"AttendanceBadge": "./cadence/contracts/AttendanceBadge.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": {
+				"type": "file",
+				"location": "emulator-account.pkey"
+			}
+		},
+		"testnet-account": {
+			"address": "892fa2c8f012194c",
+			"key": {
+				"type": "file",
+				"location": "testnet-account.pkey"
+			}
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"AttendanceBadge"
+			]
+		},
+		"testnet": {
+			"testnet-account": [
+				"AttendanceBadge"
+			]
+		}
+	}
+}
