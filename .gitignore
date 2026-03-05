@@ -1,0 +1,49 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Keep local packages
+!packages/
+
+# testing
+/out/
+
+# next.js
+/.next/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# rust
+/contract/target/
+**/*.rs.bk
+*.pdb
+
+#readme files
+
+firestore.rules
+aleo_docs.md
+# flow
+emulator-account.pkey
+imports
+testnet-account.pkey
+config.bat
