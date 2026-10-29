@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node init && next build",
-    "dev": "node init && next dev",
+    "build": "next build",
+    "dev": "next dev",
     "lint": "eslint .",
-    "start": "node init && next start",
+    "start": "next start",
     "generate:codes": "node scripts/generate-claim-codes.js"
   },
   "dependencies": {
